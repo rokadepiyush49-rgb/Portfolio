@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- "P." — the navbar wordmark as a monogram, in the site's ink and brand red. -->
+  <rect width="64" height="64" rx="14" fill="#0b0b0c"/>
+  <path fill="#ededeb" fill-rule="evenodd" d="M14 14H29a12 12 0 0 1 0 24H22V50H14ZM22 21V31H29a5 5 0 0 0 0-10Z"/>
+  <circle cx="46.5" cy="45.5" r="4.5" fill="#ff1a3c"/>
+</svg>

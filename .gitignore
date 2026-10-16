@@ -1,0 +1,35 @@
+# dependencies
+node_modules
+
+# Next.js build output
+.next
+out
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# env files (keep secrets out of git)
+.env
+.env*.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# deployment
+.vercel
+
+# OS / editor
+.DS_Store
+*.pem
+.idea
+.vscode
+
+# Local Claude Code tooling (machine-specific paths)
+.claude/
+
+# Unused photos of real people, kept locally but not published
+public/images/people/srushti.jpg
+public/images/people/sarthak-gapate.png

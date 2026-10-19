@@ -93,9 +93,10 @@ export const experience: Experience[] = [
       'Built and shipped client work end to end, across e-commerce, travel and manufacturing.',
     accent: '#F472B6',
     projects: [
-      { name: 'Daily Bread', note: 'US startup · NYC' },
-      { name: 'Pi Holidays', note: 'Tour agency' },
-      // The "pm" emblem from the Parkomate banner; the wordmark is unreadable this small.
+      { name: 'Daily Bread', note: 'US startup · NYC', logo: '/images/experience/daily-bread.png' },
+      // Pi Holidays' π mark without its name and tagline, which are unreadable this small;
+      // likewise the "pm" emblem from the Parkomate banner.
+      { name: 'Pi Holidays', note: 'Tour agency', logo: '/images/experience/pi-holidays.png' },
       { name: 'Parkomate', note: 'Production line', logo: '/images/experience/parkomate.png' },
     ],
   },

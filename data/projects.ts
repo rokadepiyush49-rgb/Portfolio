@@ -34,6 +34,7 @@ export const industryProjects: Project[] = [
     technologies: ['Next.js', 'Three.js', 'GSAP', 'TypeScript'],
     year: '2026',
     metric: 'Shipped for a US startup',
+    logo: '/images/experience/daily-bread.png',
     link: '#',
   },
   {
@@ -56,6 +57,7 @@ export const industryProjects: Project[] = [
     technologies: ['Next.js'],
     year: '2026',
     status: 'In progress · Building',
+    logo: '/images/experience/pi-holidays.png',
     link: '#',
   },
   {
@@ -95,6 +97,8 @@ export const personalProjects: Project[] = [
     technologies: ['Flutter', 'Firebase', 'Riverpod'],
     year: '2026',
     metric: 'In development',
+    // The lotus mark from the JanMaang repo (apps/mobile/assets/brand), flattened onto white.
+    logo: '/images/projects/janmaang.png',
     link: '#',
   },
 ];

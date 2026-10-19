@@ -11,13 +11,16 @@ export type Project = {
   metric?: string;
   /** Dark pill in the card's top corner — for work that's still being built. */
   status?: string;
+  /** Small square logo beside the title. */
+  logo?: string;
   link: string;
 };
 
 /*
  * Two sections sit under Experience: work shipped for clients and
  * organisations, then work built on my own time. Cards are type-only — no
- * screenshots. Each section is two columns; an odd last card sits centred.
+ * screenshots, at most a small logo. Each section is two columns; an odd last
+ * card sits centred.
  */
 
 /** Shipped for clients and organisations, with real users on the other end. */
@@ -65,6 +68,7 @@ export const industryProjects: Project[] = [
     year: '2026',
     metric: 'Program → Test → Label → Pack',
     status: 'In progress · Building',
+    logo: '/images/experience/parkomate.png',
     link: '#',
   },
 ];

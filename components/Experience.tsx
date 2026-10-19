@@ -111,10 +111,16 @@ export default function ExperienceSection() {
                         key={project.name}
                         className="flex items-center gap-2 rounded-lg bg-bg-subtle py-1.5 pl-2.5 pr-3 ring-1 ring-rule"
                       >
-                        <span
-                          className="h-1.5 w-1.5 shrink-0 rounded-full"
-                          style={{ backgroundColor: entry.accent }}
-                        />
+                        {project.logo ? (
+                          <span className="relative h-[18px] w-[18px] shrink-0 overflow-hidden rounded-[5px] ring-1 ring-rule">
+                            <SmartImage src={project.logo} alt="" label="" sizes="18px" className="object-cover" />
+                          </span>
+                        ) : (
+                          <span
+                            className="h-1.5 w-1.5 shrink-0 rounded-full"
+                            style={{ backgroundColor: entry.accent }}
+                          />
+                        )}
                         <span className="text-[13px] font-medium text-ink">{project.name}</span>
                         {project.note ? (
                           <span className="font-mono text-[11px] text-ink-faint">{project.note}</span>

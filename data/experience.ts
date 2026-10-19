@@ -25,8 +25,9 @@ export type Experience = {
   accent?: string;
   /** Small chips under the blurb. */
   tags?: string[];
-  /** Individual pieces of work under this role, shown as small cards. */
-  projects?: { name: string; note?: string }[];
+  /** Individual pieces of work under this role, shown as small cards. A
+   *  `logo` replaces the card's accent dot. */
+  projects?: { name: string; note?: string; logo?: string }[];
 };
 
 export const experience: Experience[] = [
@@ -94,7 +95,8 @@ export const experience: Experience[] = [
     projects: [
       { name: 'Daily Bread', note: 'US startup · NYC' },
       { name: 'Pi Holidays', note: 'Tour agency' },
-      { name: 'Production Line App', note: 'Manufacturing' },
+      // The "pm" emblem from the Parkomate banner; the wordmark is unreadable this small.
+      { name: 'Parkomate', note: 'Production line', logo: '/images/experience/parkomate.png' },
     ],
   },
 ];

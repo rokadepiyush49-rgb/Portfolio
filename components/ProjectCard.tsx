@@ -4,6 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import type { Project } from '@/data/projects';
 import { useIsDark } from '@/lib/useIsDark';
 import BorderGlow from './BorderGlow';
+import SmartImage from './SmartImage';
 
 /* The brand gradient (.text-gradient) and a light violet for the glow, so the
    border lights up in the same colours the index turns on hover. */
@@ -83,11 +84,20 @@ export default function ProjectCard({
           </div>
 
           <p className={`meta relative text-ink-faint ${size('mt-8 md:mt-10', 'mt-7')}`}>{project.category}</p>
-          <h3
-            className={`relative mt-2 font-bold leading-tight tracking-[-0.03em] text-ink ${size('text-[24px] md:text-[28px]', 'text-[22px]')}`}
-          >
-            {project.title}
-          </h3>
+          <div className="relative mt-2 flex items-center gap-3">
+            {project.logo ? (
+              <span
+                className={`relative shrink-0 overflow-hidden rounded-lg ring-1 ring-rule ${size('h-8 w-8 md:h-9 md:w-9', 'h-7 w-7')}`}
+              >
+                <SmartImage src={project.logo} alt="" label="" sizes="36px" className="object-cover" />
+              </span>
+            ) : null}
+            <h3
+              className={`font-bold leading-tight tracking-[-0.03em] text-ink ${size('text-[24px] md:text-[28px]', 'text-[22px]')}`}
+            >
+              {project.title}
+            </h3>
+          </div>
           <p className={`relative mt-3 leading-relaxed text-ink-dim ${size('text-[15px]', 'text-[14px]')}`}>
             {project.description}
           </p>

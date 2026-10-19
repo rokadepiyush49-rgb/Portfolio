@@ -92,7 +92,7 @@ export default function Contact() {
 
             <Row label="Résumé">
               <a
-                href={site.resume}
+                href={encodeURI(site.resume)}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1 underline decoration-rule underline-offset-4 transition-colors hover:text-accent-brand"

@@ -62,7 +62,8 @@ export const site = {
     { label: 'Instagram', href: 'https://instagram.com/piyush_rokade_51' },
   ],
 
-  resume: '/resume.pdf',
+  /** A file in /public; the spaces are encoded where it's linked. */
+  resume: '/Piyush Rokade Resume.pdf',
 
   /** Nav links — anchor ids must match the section ids in app/page.tsx. */
   nav: [

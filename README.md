@@ -101,8 +101,9 @@ like a grid; objects straighten while you drag them and spring back on release.
 
 ### Résumé
 
-The Contact section links to `site.resume` (`/resume.pdf`). Put your PDF at
-`public/resume.pdf`, or point `site.resume` somewhere else.
+The Contact section links to `site.resume`, which points at
+`public/Piyush Rokade Resume.pdf`. To update it, replace that file, or point
+`site.resume` somewhere else.
 
 ### Visual Playground (parked)
 

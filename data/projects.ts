@@ -101,4 +101,17 @@ export const personalProjects: Project[] = [
     logo: '/images/projects/janmaang.png',
     link: '#',
   },
+  {
+    slug: 'boardroomai',
+    title: 'BoardroomAI',
+    description:
+      'A virtual board of directors for startup founders. One pitch goes before eight AI executives — CEO, CTO, CFO, CMO, VC, Legal, Research and Growth — who debate it live, challenge each other and vote, then hand back an investment report, SWOT, financials, a PRD, a pitch deck and a roadmap.',
+    category: 'Hackathon · AI Agents',
+    technologies: ['Next.js', 'TypeScript', 'Groq', 'Supabase'],
+    year: '2026',
+    metric: 'HackAgentAIx finalist · Top 14 of 2,000+ teams',
+    // The app's own mark (components/brand/logo.tsx): eight seats around a table, one lit.
+    logo: '/images/projects/boardroomai.png',
+    link: 'https://github.com/rokadepiyush49-rgb/BoardroomAI',
+  },
 ];

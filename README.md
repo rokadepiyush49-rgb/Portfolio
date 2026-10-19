@@ -1,12 +1,12 @@
 # Portfolio
 
-Piyush Rokade's personal portfolio — a single-page site built with Next.js 14 (App
-Router), TypeScript, Tailwind CSS 3 and Framer Motion. Every page is statically
-prerendered at build time.
+Piyush Rokade's personal portfolio — a single-page site built with Next.js 15 (App
+Router), React 19, TypeScript, Tailwind CSS 3 and Framer Motion. Every page is
+statically prerendered at build time.
 
 ## Requirements
 
-- Node.js **18.17 or newer** (see `engines` in `package.json`)
+- Node.js **18.18 or newer** (see `engines` in `package.json`)
 - npm (the repo ships a `package-lock.json`; use `npm ci` for a clean install)
 
 ## Commands
